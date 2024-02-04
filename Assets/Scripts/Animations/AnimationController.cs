@@ -7,6 +7,10 @@ using UnityEngine;
 public class AnimationController : MonoBehaviour
 {
     [SerializeField] private Transform _playerTransform;
+    [SerializeField] private GameObject _deathCanvas;
+    [SerializeField] private GameObject _GameCanvas;
+
+
     public float _lastDirection;
    
     private Animator anim;
@@ -54,6 +58,7 @@ public class AnimationController : MonoBehaviour
         if (!health.isAlive)
         {
             anim.SetBool("isDeath", true);
+            StartCoroutine(waitForAnimation());
         }
 
         //Sprite Direction
@@ -67,5 +72,13 @@ public class AnimationController : MonoBehaviour
             _lastDirection = -0.2f;
             _playerTransform.localScale = new Vector2(_lastDirection, 0.2f);
         }
+    }
+    IEnumerator waitForAnimation()
+    {
+        yield return new WaitForSecondsRealtime(2.0f);
+
+        _GameCanvas.SetActive(false);
+        _deathCanvas.SetActive(true);
+        Statistics._livesUsed++;
     }
 }

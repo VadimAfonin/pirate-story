@@ -238,7 +238,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000061035156, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0.00012207, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &79284499
@@ -367,6 +367,8 @@ GameObject:
   - component: {fileID: 125630164}
   - component: {fileID: 125630163}
   - component: {fileID: 125630162}
+  - component: {fileID: 125630166}
+  - component: {fileID: 125630165}
   m_Layer: 5
   m_Name: Level1_Button
   m_TagString: Untagged
@@ -481,6 +483,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 125630160}
   m_CullTransparentMesh: 1
+--- !u!114 &125630165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125630160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f885fa138f476f4eb8eb71da52e3a48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _img:
+  - {fileID: 2132824001}
+  - {fileID: 1893562748}
+  - {fileID: 561083632}
+  - {fileID: 1068445679}
+--- !u!114 &125630166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125630160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c11789461c7dcd4b8a565cc4117d0b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buildIndex: 1
+  _starsPicController: {fileID: 125630165}
 --- !u!1 &159872283
 GameObject:
   m_ObjectHideFlags: 0

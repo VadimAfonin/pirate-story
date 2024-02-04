@@ -1,11 +1,15 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
     [SerializeField] private float _maxHealth;
 
+
     private float currentHealth;
     public bool isAlive;
+    public float HealthPercent => Mathf.Clamp01(currentHealth / _maxHealth);
 
     private void Awake()
     {
@@ -15,19 +19,15 @@ public class Health : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        currentHealth -= damage;
+        currentHealth -= damage;       
+            
+        
         CheckIsAlive();
     }
 
-    private void CheckIsAlive()
+    public bool CheckIsAlive()
     {
-        if (currentHealth > 0)
-        {
-            isAlive = true;
-        }
-        else
-        {
-            isAlive = false;
-        } 
+        isAlive = currentHealth > 0;
+        return isAlive; 
     }
 }

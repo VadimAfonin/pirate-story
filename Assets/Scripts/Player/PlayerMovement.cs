@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -16,17 +14,17 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask _groundMask;
     [SerializeField] private bool _isGrounded;
 
-    private Rigidbody2D rb;
+    private Rigidbody2D _rb;
+
+    private void Awake()
+    {
+        _rb = GetComponent<Rigidbody2D>();
+    }
 
     private void FixedUpdate()
     {
         Vector3 overlapCirclePosition = _groundColliderTransform.position;
         _isGrounded = Physics2D.OverlapCircle(overlapCirclePosition, _jumpOffset, _groundMask);
-    }
-
-    private void Awake()
-    {
-        rb = GetComponent<Rigidbody2D>();
     }
 
     public void Move(float direction, bool isJumpButtonPressed)
@@ -45,12 +43,12 @@ public class PlayerMovement : MonoBehaviour
     {
         if (_isGrounded)
         {
-            rb.velocity = new Vector2(rb.velocity.x, _jumpForce);
+            _rb.velocity = new Vector2(_rb.velocity.x, _jumpForce);
         }        
     }
 
     private void HorizontalMovement(float direction)
     {
-        rb.velocity = new Vector2(_accelerationCurve.Evaluate(direction), rb.velocity.y);  //Evaluate для плавного разгона и торможения Игрока
+        _rb.velocity = new Vector2(_accelerationCurve.Evaluate(direction), _rb.velocity.y);  //Evaluate для плавного разгона и торможения Игрока
     }
 }

@@ -6,11 +6,11 @@ public class Shooter : MonoBehaviour
     [SerializeField] private GameObject _bullet;
     [SerializeField] private float _bulletSpeed;
 
-    private AnimationController ac;
+    private PlayerAnimationController _animationController;
 
     private void Awake()
     {
-        ac = GetComponent<AnimationController>();
+        _animationController = GetComponent<PlayerAnimationController>();
     }
 
     public void Shoot(float direction)
@@ -18,7 +18,7 @@ public class Shooter : MonoBehaviour
         GameObject currentBullet = Instantiate(_bullet, _firePoint.position, Quaternion.identity);
         Rigidbody2D bulletVelocity = currentBullet.GetComponent<Rigidbody2D>();
 
-        if (ac._lastDirection > 0)
+        if (_animationController.LastDirection > 0)
         {
             bulletVelocity.velocity = new Vector2(_bulletSpeed * 1, bulletVelocity.velocity.y);
         }

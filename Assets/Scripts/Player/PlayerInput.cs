@@ -2,20 +2,21 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
 {
-    public float horizontalDirection;
-    public bool isJumpButtonPressed;
-    private PlayerMovement playerMovement;
+    private PlayerMovement _playerMovement;
+
+    public float HorizontalDirection;
+    public bool IsJumpButtonPressed;
 
     private void Awake()
     {
-        playerMovement = GetComponent<PlayerMovement>();
+        _playerMovement = GetComponent<PlayerMovement>();
     }
 
     private void Update()
     {
-        horizontalDirection = Input.GetAxis(GlobalStringVars.HORIZONTAL_AXIS);
-        isJumpButtonPressed = Input.GetButtonDown(GlobalStringVars.JUMP);
+        HorizontalDirection = Input.GetAxis(GlobalStringVars.HorizontalAxis);
+        IsJumpButtonPressed = Input.GetButtonDown(GlobalStringVars.Jump);
 
-        playerMovement.Move(horizontalDirection, isJumpButtonPressed);        
+        _playerMovement.Move(HorizontalDirection, IsJumpButtonPressed);
     }
 }

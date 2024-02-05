@@ -124,7 +124,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 698030824331072841}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: onRestartButtonClick
+        m_MethodName: OnRestartButtonClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -270,7 +270,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 9093793547728086155}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: onHomeButtonClick
+        m_MethodName: OnHomeButtonClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

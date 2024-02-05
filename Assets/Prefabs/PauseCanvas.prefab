@@ -232,7 +232,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6928032937397101562}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: onRestartButtonClick
+        m_MethodName: OnRestartButtonClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -831,7 +831,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 7090018892853332038}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: onHomeButtonClick
+        m_MethodName: OnHomeButtonClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -977,7 +977,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 786594321392565118}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: omMuteButtonClick
+        m_MethodName: OnMuteButtonClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

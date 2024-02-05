@@ -4,7 +4,6 @@ using UnityEngine.UI;
 
 public class PlayerHealthBar : MonoBehaviour
 {
-
     [SerializeField] private Image _playerHealthImage;
     [SerializeField] private GameObject _deathCanvas;
     [SerializeField] private GameObject _GameCanvas;
@@ -18,18 +17,17 @@ public class PlayerHealthBar : MonoBehaviour
 
         if (!_player.CheckIsAlive() && !_isCoroutineStarted)
         {
-
-            StartCoroutine(waitForAnimation());
+            StartCoroutine(WaitForAnimation());
             _isCoroutineStarted = true;
         }        
     }
 
-    IEnumerator waitForAnimation()
+    IEnumerator WaitForAnimation()
     {
         yield return new WaitForSecondsRealtime(2.0f);
         _GameCanvas.SetActive(false);
         Time.timeScale = 0;
         _deathCanvas.SetActive(true);
-        Statistics._livesUsed++;
+        Statistics.LivesUsed++;
     }
 }

@@ -129,8 +129,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70615c098c6ea454c8ac2c9f8edc71f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontalDirection: 0
-  isJumpButtonPressed: 0
+  HorizontalDirection: 0
+  IsJumpButtonPressed: 0
 --- !u!114 &6748527981418561223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,7 +220,7 @@ MonoBehaviour:
   _playerTransform: {fileID: 6748527981418561221}
   _deathCanvas: {fileID: 168291777972042310, guid: 908f2f2f5d3218b4aa0dc42e287c0907, type: 3}
   _GameCanvas: {fileID: 0}
-  _lastDirection: 0
+  LastDirection: 0
 --- !u!114 &6748527981418561216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,7 +234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxHealth: 100
-  isAlive: 0
+  IsAlive: 0
 --- !u!114 &6748527981418561219
 MonoBehaviour:
   m_ObjectHideFlags: 0

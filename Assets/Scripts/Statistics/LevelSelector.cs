@@ -3,10 +3,10 @@ using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.UI;
 
-public class Level_Selector : MonoBehaviour
+public class LevelSelector : MonoBehaviour
 {
-    [SerializeField] private int _buildIndex;
     [SerializeField] StarsPicController _starsPicController;
+    [SerializeField] private int _buildIndex;
 
     private void Awake()
     {

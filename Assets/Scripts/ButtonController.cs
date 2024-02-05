@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -8,32 +6,32 @@ public class ButtonController : MonoBehaviour
 {
     private Sprite _isMutedSprite;
     private Sprite _nonMutedSprite;
-    private static bool _isMuted;
-    private Image img;
+    private Image _img;
 
+    private static bool _isMuted;
 
     private void Awake()
     {
         var camera = FindObjectOfType<Camera>();
-        img = GetComponent<Image>();
+        _img = GetComponent<Image>();
         _isMuted = false;
         _nonMutedSprite = Resources.Load<Sprite>("PNG/UI/btn/misic");
         _isMutedSprite = Resources.Load<Sprite>("PNG/UI/btn/music_off");
     }
 
-    public void onHomeButtonClick()
+    public void OnHomeButtonClick()
     {
         SceneManager.LoadScene(0);
     }
 
-    public void omMuteButtonClick()
+    public void OnMuteButtonClick()
     {
         _isMuted = !_isMuted;
         AudioListener.volume = _isMuted ? 0 : 1;
-        img.sprite = _isMuted ? _isMutedSprite : _nonMutedSprite;
+        _img.sprite = _isMuted ? _isMutedSprite : _nonMutedSprite;
     }
 
-    public void onRestartButtonClick()
+    public void OnRestartButtonClick()
     {
         Time.timeScale = 1;
         Statistics.ResetStatsOnLevel();

@@ -6,5 +6,4 @@ public static class FloatExtensions
     {
         return Math.Abs(v) <= float.Epsilon;
     }
-
 }

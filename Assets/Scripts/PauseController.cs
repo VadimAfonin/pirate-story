@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PauseController : MonoBehaviour
@@ -8,6 +6,7 @@ public class PauseController : MonoBehaviour
     [SerializeField] private GameObject _gameCanvas;
 
     public static bool _isPaused = false;
+
     public void OnPlayButtonClick()
     {
         _isPaused = false;

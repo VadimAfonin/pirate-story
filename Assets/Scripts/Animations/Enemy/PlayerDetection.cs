@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerDetection : MonoBehaviour
@@ -8,16 +6,17 @@ public class PlayerDetection : MonoBehaviour
     [SerializeField] private float _enemySpeed;
     [SerializeField] private float _attackDistance;
 
-    private bool youVisible = false;
-    public bool youAttacked = false;
+    private bool _youVisible = false;
 
-    private const string PlayerTag = "Player";      
+    private const string PlayerTag = "Player";
+
+    public bool YouAttacked = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.name.Equals(PlayerTag))
         {
-            youVisible = true;
+            _youVisible = true;
         }
     }
 
@@ -25,18 +24,13 @@ public class PlayerDetection : MonoBehaviour
     {
         if (collision.gameObject.name.Equals(PlayerTag))
         {
-            youVisible = false;
+            _youVisible = false;
         }
     }    
 
-    private void AttackPlayer()
-    {
-        transform.position = Vector2.MoveTowards(transform.position, _playerTransform.position, _enemySpeed * Time.deltaTime);        
-    }
-
     private void Update()
     {
-        if (youVisible)
+        if (_youVisible)
         {
             AttackPlayer();
         }
@@ -44,6 +38,11 @@ public class PlayerDetection : MonoBehaviour
 
     private void FixedUpdate()
     {
-        youAttacked = (_playerTransform.position - transform.position).sqrMagnitude < _attackDistance;
+        YouAttacked = (_playerTransform.position - transform.position).sqrMagnitude < _attackDistance;
+    }
+
+    private void AttackPlayer()
+    {
+        transform.position = Vector2.MoveTowards(transform.position, _playerTransform.position, _enemySpeed * Time.deltaTime);
     }
 }

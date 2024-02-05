@@ -1556,6 +1556,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5928549366249725119, guid: 2d9ccb72b1f7e1b4f99c99983d7ac53e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnHomeButtonClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825079202549213345, guid: 2d9ccb72b1f7e1b4f99c99983d7ac53e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnMuteButtonClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804092855855149590, guid: 2d9ccb72b1f7e1b4f99c99983d7ac53e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnRestartButtonClick
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d9ccb72b1f7e1b4f99c99983d7ac53e, type: 3}
 --- !u!1 &745721753
@@ -2809,7 +2821,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1660149634}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.5239747, y: 1.3627551, z: -9.995391}
+  m_LocalPosition: {x: 1.7860255, y: 1.3627551, z: -9.995391}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3024,6 +3036,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 168291776085401669, guid: 908f2f2f5d3218b4aa0dc42e287c0907, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnRestartButtonClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 168291776511329297, guid: 908f2f2f5d3218b4aa0dc42e287c0907, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnHomeButtonClick
+      objectReference: {fileID: 0}
     - target: {fileID: 168291777972042310, guid: 908f2f2f5d3218b4aa0dc42e287c0907, type: 3}
       propertyPath: m_Name
       value: DeathCanvas
@@ -3182,7 +3202,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1804375527}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.5239747, y: 1.3627551, z: -9.995391}
+  m_LocalPosition: {x: 1.7860255, y: 1.3627551, z: -9.995391}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3782,7 +3802,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1800170809393098643, guid: 34177a555d0aaaa499ec3e04af79d081, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.15
+      value: -6.74
       objectReference: {fileID: 0}
     - target: {fileID: 1800170809393098643, guid: 34177a555d0aaaa499ec3e04af79d081, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3823,6 +3843,10 @@ PrefabInstance:
     - target: {fileID: 1800170809393098646, guid: 34177a555d0aaaa499ec3e04af79d081, type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 1800170809393098664, guid: 34177a555d0aaaa499ec3e04af79d081, type: 3}
+      propertyPath: _attackDistance
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1800170809393098664, guid: 34177a555d0aaaa499ec3e04af79d081, type: 3}
       propertyPath: _playerTransform
@@ -3912,7 +3936,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6748527981418561221, guid: fcd22fab0bae06445b91c69daaba2788, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.34
+      value: -2.03
       objectReference: {fileID: 0}
     - target: {fileID: 6748527981418561221, guid: fcd22fab0bae06445b91c69daaba2788, type: 3}
       propertyPath: m_LocalPosition.y

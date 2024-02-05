@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CollectCoin : MonoBehaviour
@@ -16,10 +14,10 @@ public class CollectCoin : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D player)
     {
-        if (player.gameObject.name.Equals("Player") && !_isCollected)
+        if (player.gameObject.name.Equals(GlobalTags.PlayerTag) && !_isCollected)
         {
             _collectSound.PlayOneShot(_collectSound.clip);
-            Statistics._coinsCollected++;
+            Statistics.CoinsCollected++;
             Destroy(_coin, 0.35f);
             _isCollected = true;
         }

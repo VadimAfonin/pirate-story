@@ -14,6 +14,9 @@ public class Enemy_AnimationController : MonoBehaviour
     private Rigidbody2D rb;
     private PlayerDetection pd;
     private float currentCooldown = 0;
+    private float _prevFrameXPosition;
+
+
 
     private void Awake()
     {
@@ -22,6 +25,7 @@ public class Enemy_AnimationController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         pd = GetComponent<PlayerDetection>();
         _playerHealth = _player.GetComponent<Health>();
+        _prevFrameXPosition = transform.position.x;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -47,8 +51,9 @@ public class Enemy_AnimationController : MonoBehaviour
             StartCoroutine(waitForAnimation());
         }
 
+
         //Running
-        anim.SetBool("isRunning", !rb.velocity.x.IsEqualsZero());
+        anim.SetBool("isRunning", Mathf.Abs(transform.position.x - _prevFrameXPosition) > float.Epsilon);
 
         //Attack
         if (pd.youAttacked && _playerHealth.isAlive)
@@ -66,6 +71,7 @@ public class Enemy_AnimationController : MonoBehaviour
         {
             anim.SetBool("youAttacked", false);
         }
+        _prevFrameXPosition = transform.position.x;
     }
 
     IEnumerator waitForAnimation()

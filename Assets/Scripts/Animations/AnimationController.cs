@@ -60,6 +60,7 @@ public class AnimationController : MonoBehaviour
             anim.SetBool("isDeath", true);
             StartCoroutine(waitForAnimation());
         }
+                
 
         //Sprite Direction
         if (input.horizontalDirection > 0)
@@ -73,6 +74,12 @@ public class AnimationController : MonoBehaviour
             _playerTransform.localScale = new Vector2(_lastDirection, 0.2f);
         }
     }
+
+    public void GetDamageAnimation()
+    {
+        anim.SetTrigger("Hurt");
+    }
+
     IEnumerator waitForAnimation()
     {
         yield return new WaitForSecondsRealtime(2.0f);

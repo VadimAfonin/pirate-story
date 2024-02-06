@@ -54,6 +54,12 @@ TagManager:
   - name: Parrots
     uniqueID: 317807335
     locked: 0
+  - name: Enemies
+    uniqueID: 3066855913
+    locked: 0
   - name: Player
     uniqueID: 576044909
+    locked: 0
+  - name: Coins
+    uniqueID: 915622355
     locked: 0

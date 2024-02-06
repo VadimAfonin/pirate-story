@@ -31,6 +31,8 @@ Assets were used in the game:
 1. [2D Pirate Cove | Treasure Hunt Harbor | Tropical Buccaneer Cove](https://assetstore.unity.com/packages/2d/environments/2d-pirate-cove-treasure-hunt-harbor-tropical-buccaneer-cove-258142#asset_quality) by [GameDevDreamer](https://assetstore.unity.com/publishers/84286)
 2. [Free 2D Pirate Sprites](https://free-game-assets.itch.io/free-2d-pirate-sprites?download) by [CraftPix.net](https://craftpix.net/)
 
+**Commercial use of content from this project is prohibited**
+
 ## Contact
 [Gmail : ](sfyt6554@gmail.com) sfyt6554@gmail.com
 

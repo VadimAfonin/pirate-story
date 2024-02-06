@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class StarsPicController : MonoBehaviour
+public class GetStarsCountOnMenu : MonoBehaviour
 {
     [SerializeField] private GameObject[] _img;
 

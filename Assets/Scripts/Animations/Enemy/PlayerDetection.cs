@@ -6,9 +6,16 @@ public class PlayerDetection : MonoBehaviour
     [SerializeField] private float _enemySpeed;
     [SerializeField] private float _attackDistance;
 
+    private EnemyAnimationController _enemyAnimatorController;
+
     private bool _youVisible = false;
 
     public bool YouAttacked = false;
+
+    private void Awake()
+    {
+        _enemyAnimatorController = GetComponent<EnemyAnimationController>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -24,11 +31,11 @@ public class PlayerDetection : MonoBehaviour
         {
             _youVisible = false;
         }
-    }    
+    }
 
     private void Update()
     {
-        if (_youVisible)
+        if (_youVisible && !_enemyAnimatorController.IsEnemyKilled)
         {
             AttackPlayer();
         }

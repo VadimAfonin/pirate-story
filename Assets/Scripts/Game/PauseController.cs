@@ -5,11 +5,11 @@ public class PauseController : MonoBehaviour
     [SerializeField] private GameObject _pauseCanvas;
     [SerializeField] private GameObject _gameCanvas;
 
-    public static bool _isPaused = false;
+    public static bool IsPaused = false;
 
     public void OnPlayButtonClick()
     {
-        _isPaused = false;
+        IsPaused = false;
         Time.timeScale = 1;
         _pauseCanvas.SetActive(false);
         _gameCanvas.SetActive(true);
@@ -19,7 +19,7 @@ public class PauseController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            _isPaused = true;
+            IsPaused = true;
             Time.timeScale = 0;
             _gameCanvas.SetActive(false);
             _pauseCanvas.SetActive(true);

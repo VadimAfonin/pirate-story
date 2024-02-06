@@ -5,14 +5,14 @@ using UnityEngine.UI;
 
 public class LevelSelector : MonoBehaviour
 {
-    [SerializeField] StarsPicController _starsPicController;
+    [SerializeField] GetStarsCountOnMenu _starsPicController;
     [SerializeField] private int _buildIndex;
 
     private void Awake()
     {
-        var index = transform.GetChild(0);
-        index.GetComponent<TMP_Text>().text = _buildIndex.ToString();
-        _starsPicController.SetPicStars(Storage.GetStars(_buildIndex));
+        Transform LevelIndex = transform.GetChild(0);
+        LevelIndex.GetComponent<TMP_Text>().text = _buildIndex.ToString();
+        _starsPicController.SetPicStars(Storage.GetStarsCountFromPrefs(_buildIndex));
         var button = GetComponent<Button>();
         button.onClick.AddListener(OnLevelButtonClick);
     }

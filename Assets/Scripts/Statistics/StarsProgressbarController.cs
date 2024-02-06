@@ -1,9 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class StarsScaleController : MonoBehaviour
+public class StarsProgressbarController : MonoBehaviour
 {
-    private Image _scale;   
+    private Image _scale;
     private CollectCoin[] _coins;
 
     public int CoinsQuantity;

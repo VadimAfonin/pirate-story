@@ -5,6 +5,7 @@ public class Health : MonoBehaviour
     [SerializeField] private float _maxHealth;
 
     private float _currentHealth;
+
     public bool IsAlive;
 
     public float HealthPercent => Mathf.Clamp01(_currentHealth / _maxHealth);

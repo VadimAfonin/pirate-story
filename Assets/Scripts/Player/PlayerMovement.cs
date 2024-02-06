@@ -12,7 +12,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private AnimationCurve _accelerationCurve;
     [SerializeField] private Transform _groundColliderTransform;
     [SerializeField] private LayerMask _groundMask;
-    [SerializeField] private bool _isGrounded;
+
+    private bool _isGrounded;
 
     private Rigidbody2D _rb;
 
@@ -44,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
         if (_isGrounded)
         {
             _rb.velocity = new Vector2(_rb.velocity.x, _jumpForce);
-        }        
+        }
     }
 
     private void HorizontalMovement(float direction)

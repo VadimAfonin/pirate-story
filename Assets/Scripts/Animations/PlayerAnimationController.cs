@@ -8,7 +8,7 @@ public class PlayerAnimationController : MonoBehaviour
     [SerializeField] private Transform _playerTransform;
     [SerializeField] private GameObject _deathCanvas;
     [SerializeField] private GameObject _GameCanvas;
-   
+
     private Animator _anim;
     private PlayerInput _input;
     private Health _health;
@@ -55,8 +55,8 @@ public class PlayerAnimationController : MonoBehaviour
         if (!_health.IsAlive)
         {
             _anim.SetBool(AnimatorConstants._isDeathProperty, true);
-            StartCoroutine(waitForAnimation());
-        }                
+            StartCoroutine(WaitForPlayerDeathAnimation());
+        }
 
         //Sprite Direction
         if (_input.HorizontalDirection > 0)
@@ -76,7 +76,7 @@ public class PlayerAnimationController : MonoBehaviour
         _anim.SetTrigger(AnimatorConstants._isHurtingProperty);
     }
 
-    IEnumerator waitForAnimation()
+    IEnumerator WaitForPlayerDeathAnimation()
     {
         yield return new WaitForSecondsRealtime(2.0f);
         _GameCanvas.SetActive(false);

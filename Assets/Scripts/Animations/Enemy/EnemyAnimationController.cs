@@ -11,10 +11,11 @@ public class EnemyAnimationController : MonoBehaviour
     private Health _health;
     private Health _playerHealth;
     private PlayerDetection _playerDetection;
-    private SpriteRenderer _spriteRenderer;
 
     private float _currentCooldown = 0;
-    private float _prevFrameXPosition;    
+    private float _prevFrameXPosition;
+
+    public bool IsEnemyKilled;
 
     private void Awake()
     {
@@ -22,7 +23,6 @@ public class EnemyAnimationController : MonoBehaviour
         _health = GetComponent<Health>();
         _playerDetection = GetComponent<PlayerDetection>();
         _playerHealth = _player.GetComponent<Health>();
-        _spriteRenderer = GetComponent<SpriteRenderer>();
         _prevFrameXPosition = transform.position.x;
     }
 
@@ -47,14 +47,14 @@ public class EnemyAnimationController : MonoBehaviour
         if (!_health.IsAlive)
         {
             _anim.SetBool(AnimatorConstants._isDeathProperty, true);
-            StartCoroutine(waitForAnimation());
+            StartCoroutine(WaitForEnemyDeathAnimation());
         }
 
         //Running
-        _anim.SetBool(AnimatorConstants._isRunningProperty, Mathf.Abs(transform.position.x - _prevFrameXPosition) > float.Epsilon);
-        
+        _anim.SetBool(AnimatorConstants._isRunningProperty, Mathf.Abs(transform.position.x - _prevFrameXPosition) > float.Epsilon && !IsEnemyKilled);
+
         //Sprite Direction
-        if (_player.transform.position.x > transform.position.x)
+        if (_player.transform.position.x > transform.position.x && !IsEnemyKilled)
         {
             transform.localScale = new Vector2(-Mathf.Abs(transform.localScale.x), transform.localScale.y);
         }
@@ -64,7 +64,7 @@ public class EnemyAnimationController : MonoBehaviour
         }
 
         //Attack
-        if (_playerDetection.YouAttacked && _playerHealth.IsAlive)
+        if (_playerDetection.YouAttacked && _playerHealth.IsAlive && !IsEnemyKilled)
         {
             _anim.SetBool(AnimatorConstants._isAttackedProperty, true);
             _player.GetComponent<Animator>().SetTrigger(AnimatorConstants._isHurtingProperty);
@@ -83,8 +83,9 @@ public class EnemyAnimationController : MonoBehaviour
         _prevFrameXPosition = transform.position.x;
     }
 
-    IEnumerator waitForAnimation()
+    IEnumerator WaitForEnemyDeathAnimation()
     {
+        IsEnemyKilled = true;
         yield return new WaitForSecondsRealtime(2.0f);
         Statistics.EnemiesKilled++;
         Destroy(gameObject);

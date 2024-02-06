@@ -10,6 +10,7 @@ public class DamageDealer : MonoBehaviour
         {
             collision.gameObject.GetComponent<Health>().TakeDamage(_damage);
         }
+
         Destroy(gameObject);
     }
 }

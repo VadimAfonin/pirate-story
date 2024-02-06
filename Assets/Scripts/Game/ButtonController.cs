@@ -12,7 +12,6 @@ public class ButtonController : MonoBehaviour
 
     private void Awake()
     {
-        var camera = FindObjectOfType<Camera>();
         _img = GetComponent<Image>();
         _isMuted = false;
         _nonMutedSprite = Resources.Load<Sprite>("PNG/UI/btn/misic");

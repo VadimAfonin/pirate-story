@@ -2,18 +2,20 @@ using UnityEngine;
 
 public class Storage : MonoBehaviour
 {
-    public static void SetStars(int starsQuant, int levelNum)
+    public const string LevelKey = "level_stars_count_{0}";
+
+    public static void SetStarsCountToPrefs(int starsQuant, int levelNum)
     {
-        PlayerPrefs.SetInt(GetLevelKey(levelNum), starsQuant);
+        PlayerPrefs.SetInt(GetLevelKeyForPrefs(levelNum), starsQuant);
     }
 
-    public static int GetStars(int levelNum)
+    public static int GetStarsCountFromPrefs(int levelNum)
     {
-        return PlayerPrefs.GetInt(GetLevelKey(levelNum));
+        return PlayerPrefs.GetInt(GetLevelKeyForPrefs(levelNum));
     }
 
-    private static string GetLevelKey(int levelNum)
+    private static string GetLevelKeyForPrefs(int levelNum)
     {
-        return string.Format(GlobalTags.LevelKey, levelNum);
+        return string.Format(LevelKey, levelNum);
     }
 }

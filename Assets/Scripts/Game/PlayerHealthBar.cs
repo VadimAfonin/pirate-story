@@ -17,12 +17,12 @@ public class PlayerHealthBar : MonoBehaviour
 
         if (!_player.CheckIsAlive() && !_isCoroutineStarted)
         {
-            StartCoroutine(WaitForAnimation());
+            StartCoroutine(WaitForDeathCanvas());
             _isCoroutineStarted = true;
-        }        
+        }
     }
 
-    IEnumerator WaitForAnimation()
+    IEnumerator WaitForDeathCanvas()
     {
         yield return new WaitForSecondsRealtime(2.0f);
         _GameCanvas.SetActive(false);

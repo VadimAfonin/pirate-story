@@ -88,9 +88,7 @@ GameObject:
   - component: {fileID: 859204722668968482}
   - component: {fileID: 7589874272197097999}
   - component: {fileID: 7150981787434952387}
-  - component: {fileID: 1374075162}
-  - component: {fileID: 1490553489}
-  - component: {fileID: 6117231986148109502}
+  - component: {fileID: 4654421019273402620}
   m_Layer: 5
   m_Name: Ui-PopUp
   m_TagString: Untagged
@@ -184,7 +182,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &1374075162
+--- !u!114 &4654421019273402620
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -193,41 +191,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2885832107270248332}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fff46f281600e241ad18b558dca7a45, type: 3}
+  m_Script: {fileID: 11500000, guid: 350d789e2ae7f054abae66e1d9540e35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _levelCoins: {fileID: 1496683260893310753}
   _levelMonsters: {fileID: 13036344440019738}
---- !u!114 &1490553489
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2885832107270248332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d12aeca5b40a60e419d8224f408ba294, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _totalMosters: {fileID: 0}
-  _totalCoins: {fileID: 0}
-  _totalLives: {fileID: 0}
---- !u!114 &6117231986148109502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2885832107270248332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d12aeca5b40a60e419d8224f408ba294, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _totalMosters: {fileID: 0}
-  _totalCoins: {fileID: 0}
-  _totalLives: {fileID: 0}
 --- !u!1 &4196117204329106380
 GameObject:
   m_ObjectHideFlags: 0
@@ -413,7 +381,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2034235500997680314}
-  - component: {fileID: 8093706217912671102}
+  - component: {fileID: 3422525618349016557}
   m_Layer: 5
   m_Name: Stars
   m_TagString: Untagged
@@ -445,7 +413,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &8093706217912671102
+--- !u!114 &3422525618349016557
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -454,7 +422,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4766012688917786393}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8cb345c6b98fd1a439c9a7f082aad62d, type: 3}
+  m_Script: {fileID: 11500000, guid: 7f885fa138f476f4eb8eb71da52e3a48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _img:
@@ -609,7 +577,7 @@ GameObject:
   - component: {fileID: 385852623260091926}
   - component: {fileID: 4820767211070478270}
   - component: {fileID: 8911090669732828693}
-  - component: {fileID: 1998335752}
+  - component: {fileID: 6498069723097662653}
   m_Layer: 5
   m_Name: 0_StarsImage
   m_TagString: Untagged
@@ -696,7 +664,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1998335752
+--- !u!114 &6498069723097662653
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -705,7 +673,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5342310639831302255}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dca47f8a3e9ac464a91043b2b17cbbac, type: 3}
+  m_Script: {fileID: 11500000, guid: 8b1041fe5117f884cb3c38c7026d9227, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _uiPopup: {fileID: 2885832107270248332}
@@ -1240,7 +1208,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b4ea0d5333ab30f4481fbf1f9add88cd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e5f6631389c332342be122985f4c0f65, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1438,7 +1406,7 @@ GameObject:
   - component: {fileID: 1261214961845930397}
   - component: {fileID: 493793889139399646}
   - component: {fileID: 2170696419991965275}
-  - component: {fileID: 1364133067388703859}
+  - component: {fileID: 1683022200015250812}
   m_Layer: 5
   m_Name: ToNextLevelButton
   m_TagString: Untagged
@@ -1548,7 +1516,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1364133067388703859}
+      - m_Target: {fileID: 1683022200015250812}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
         m_MethodName: OnNextLevelButtonClick
         m_Mode: 1
@@ -1560,7 +1528,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1364133067388703859
+--- !u!114 &1683022200015250812
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1569,7 +1537,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8305386952173203646}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddb264fee9dceee4cb92901f7664ccac, type: 3}
+  m_Script: {fileID: 11500000, guid: 0b5c8247bc05cf74aa5a52c06de1f265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8491569595914799519
@@ -1584,7 +1552,7 @@ GameObject:
   - component: {fileID: 7256073568327836623}
   - component: {fileID: 2372177702901256865}
   - component: {fileID: 2255131467297118306}
-  - component: {fileID: 1134432174562056578}
+  - component: {fileID: 8635766742670211682}
   m_Layer: 5
   m_Name: HomeButton
   m_TagString: Untagged
@@ -1694,9 +1662,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1134432174562056578}
+      - m_Target: {fileID: 8635766742670211682}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: onHomeButtonClick
+        m_MethodName: OnHomeButtonClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1706,7 +1674,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1134432174562056578
+--- !u!114 &8635766742670211682
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1715,7 +1683,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8491569595914799519}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddb264fee9dceee4cb92901f7664ccac, type: 3}
+  m_Script: {fileID: 11500000, guid: 0b5c8247bc05cf74aa5a52c06de1f265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8557519028040193760
@@ -1784,7 +1752,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2085170888, guid: ec1d1dec2d4351f4bbf51692908b0698, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3e3ee37375d19254d80b5fc61b5eeb9a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

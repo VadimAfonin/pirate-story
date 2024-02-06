@@ -337,7 +337,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fa943118eedb19a4382d7dc37131e695, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a424d54878c8af34ab8536577be664b5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -695,6 +695,8 @@ GameObject:
   - component: {fileID: 198896712}
   - component: {fileID: 198896711}
   - component: {fileID: 198896710}
+  - component: {fileID: 198896714}
+  - component: {fileID: 198896713}
   m_Layer: 5
   m_Name: Level3_Button
   m_TagString: Untagged
@@ -809,6 +811,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 198896708}
   m_CullTransparentMesh: 1
+--- !u!114 &198896713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198896708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f885fa138f476f4eb8eb71da52e3a48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _img:
+  - {fileID: 1143655070}
+  - {fileID: 439774619}
+  - {fileID: 269123537}
+  - {fileID: 83393190}
+--- !u!114 &198896714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198896708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c11789461c7dcd4b8a565cc4117d0b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _starsPicController: {fileID: 198896713}
+  _buildIndex: 3
 --- !u!1 &257672406
 GameObject:
   m_ObjectHideFlags: 0
@@ -1124,7 +1157,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fa943118eedb19a4382d7dc37131e695, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a424d54878c8af34ab8536577be664b5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2529,7 +2562,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fa943118eedb19a4382d7dc37131e695, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a424d54878c8af34ab8536577be664b5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3151,6 +3184,8 @@ GameObject:
   - component: {fileID: 1432518337}
   - component: {fileID: 1432518336}
   - component: {fileID: 1432518335}
+  - component: {fileID: 1432518339}
+  - component: {fileID: 1432518338}
   m_Layer: 5
   m_Name: Level2_Button
   m_TagString: Untagged
@@ -3265,6 +3300,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1432518333}
   m_CullTransparentMesh: 1
+--- !u!114 &1432518338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432518333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f885fa138f476f4eb8eb71da52e3a48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _img:
+  - {fileID: 581286652}
+  - {fileID: 257672406}
+  - {fileID: 665271526}
+  - {fileID: 367075025}
+--- !u!114 &1432518339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432518333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c11789461c7dcd4b8a565cc4117d0b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _starsPicController: {fileID: 1432518338}
+  _buildIndex: 2
 --- !u!1 &1505211270
 GameObject:
   m_ObjectHideFlags: 0
@@ -3323,7 +3389,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fa943118eedb19a4382d7dc37131e695, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a424d54878c8af34ab8536577be664b5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3717,6 +3783,8 @@ GameObject:
   - component: {fileID: 1557902395}
   - component: {fileID: 1557902394}
   - component: {fileID: 1557902393}
+  - component: {fileID: 1557902397}
+  - component: {fileID: 1557902396}
   m_Layer: 5
   m_Name: Level4_Button
   m_TagString: Untagged
@@ -3831,6 +3899,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1557902391}
   m_CullTransparentMesh: 1
+--- !u!114 &1557902396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557902391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f885fa138f476f4eb8eb71da52e3a48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _img:
+  - {fileID: 1614270117}
+  - {fileID: 4284157}
+  - {fileID: 1169832843}
+  - {fileID: 1505211270}
+--- !u!114 &1557902397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557902391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c11789461c7dcd4b8a565cc4117d0b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _starsPicController: {fileID: 1557902396}
+  _buildIndex: 4
 --- !u!1 &1609386692
 GameObject:
   m_ObjectHideFlags: 0
@@ -4855,7 +4954,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fa943118eedb19a4382d7dc37131e695, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a424d54878c8af34ab8536577be664b5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5020,6 +5119,8 @@ GameObject:
   - component: {fileID: 2037520283}
   - component: {fileID: 2037520282}
   - component: {fileID: 2037520281}
+  - component: {fileID: 2037520285}
+  - component: {fileID: 2037520284}
   m_Layer: 5
   m_Name: Level5_Button
   m_TagString: Untagged
@@ -5134,6 +5235,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2037520279}
   m_CullTransparentMesh: 1
+--- !u!114 &2037520284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037520279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f885fa138f476f4eb8eb71da52e3a48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _img:
+  - {fileID: 1696638662}
+  - {fileID: 1394787218}
+  - {fileID: 985979561}
+  - {fileID: 1958281814}
+--- !u!114 &2037520285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037520279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c11789461c7dcd4b8a565cc4117d0b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _starsPicController: {fileID: 2037520284}
+  _buildIndex: 5
 --- !u!1 &2057598280
 GameObject:
   m_ObjectHideFlags: 0

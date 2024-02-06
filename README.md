@@ -5,7 +5,7 @@
 
 ## About this game
 ![Изображение](https://downloader.disk.yandex.ru/preview/4b168e395d2e1d7fe417d50f02f60d8b18a5b8444907d2ed8ccbd1a255c24ea1/65c26496/sjfsPRTIDKR1imbE1sakF2_YzOR1OZ1zXJ7jGjzgQcetr-sIJjlu3-mOycuReMwQFW7_xhjoqkGuYiEqlWHkUg%3D%3D?uid=0&filename=Screenshot.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=2560x1414 "Game Screenshot")
-In this Platformer game, you are invited to play as a Pirate and fight countless enemies. Collect coins, special items and go all the way to freedom
+In this 2D Platformer game, you are invited to play as a Pirate and fight countless enemies. Collect coins, special items and go all the way to freedom
 
 ## Current status of the Game
 Below is a list of all the features and their status:
@@ -22,9 +22,9 @@ Below is a list of all the features and their status:
 At the moment, the game is in the process of creating the first version
 
 ## Installation
-1. On the main page of the project, click the green "Code" button and select "Download ZIP"
-2. Вownload and extract the ZIP to a convenient location on your disk
-3. Open this folder with UnityHub
+1. Click the green "Code" button and select "Download ZIP" on the Main page of this project
+2. Download and extract the ZIP to a convenient location on your disk
+3. Open this folder with Unity Hub
 
 ## License
 Assets were used in the game:

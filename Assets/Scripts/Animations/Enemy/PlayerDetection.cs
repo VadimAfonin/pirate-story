@@ -8,13 +8,11 @@ public class PlayerDetection : MonoBehaviour
 
     private bool _youVisible = false;
 
-    private const string PlayerTag = "Player";
-
     public bool YouAttacked = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name.Equals(PlayerTag))
+        if (collision.gameObject.name.Equals(GlobalTags.PlayerTag))
         {
             _youVisible = true;
         }
@@ -22,7 +20,7 @@ public class PlayerDetection : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.name.Equals(PlayerTag))
+        if (collision.gameObject.name.Equals(GlobalTags.PlayerTag))
         {
             _youVisible = false;
         }

@@ -4,9 +4,9 @@ public class DamageDealer : MonoBehaviour
 {
     [SerializeField] private float _damage;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.CompareTag(GlobalTags.DamageableTag))
+        if (collision.gameObject.CompareTag(GlobalTags.DamageableTag))
         {
             collision.gameObject.GetComponent<Health>().TakeDamage(_damage);
         }

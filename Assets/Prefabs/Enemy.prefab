@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 1800170809393098668}
   - component: {fileID: 1800170809393098665}
   - component: {fileID: 1800170809393098664}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Enemy
   m_TagString: Damageable
   m_Icon: {fileID: 0}
@@ -175,9 +175,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c818d0c9b2e4acb43b2651d11dcf769f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _player: {fileID: 0}
+  _player: {fileID: 6748527981418561272, guid: fcd22fab0bae06445b91c69daaba2788, type: 3}
   _enemyDamage: 30
   _attackCooldown: 0.7
+  IsEnemyKilled: 0
 --- !u!61 &1800170809393098665
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -216,7 +217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15bd26eec12872c4f8576021978f307e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerTransform: {fileID: 0}
+  _playerTransform: {fileID: 6748527981418561221, guid: fcd22fab0bae06445b91c69daaba2788, type: 3}
   _enemySpeed: 1
   _attackDistance: 0.4
   YouAttacked: 0

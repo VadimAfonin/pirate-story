@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 6565359769548875094}
   - component: {fileID: 6565359769548875095}
   - component: {fileID: 6565359769548875092}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Enemy_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,9 +138,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c818d0c9b2e4acb43b2651d11dcf769f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _player: {fileID: 0}
+  _player: {fileID: 6748527981418561272, guid: fcd22fab0bae06445b91c69daaba2788, type: 3}
   _enemyDamage: 40
   _attackCooldown: 0.7
+  IsEnemyKilled: 0
 --- !u!114 &6565359769548875089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,7 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15bd26eec12872c4f8576021978f307e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerTransform: {fileID: 0}
+  _playerTransform: {fileID: 6748527981418561221, guid: fcd22fab0bae06445b91c69daaba2788, type: 3}
   _enemySpeed: 1.5
   _attackDistance: 0.5
   YouAttacked: 0

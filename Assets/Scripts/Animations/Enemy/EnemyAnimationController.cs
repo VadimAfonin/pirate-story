@@ -26,9 +26,9 @@ public class EnemyAnimationController : MonoBehaviour
         _prevFrameXPosition = transform.position.x;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.CompareTag(GlobalTags.BulletTag))
+        if (collision.gameObject.CompareTag(GlobalTags.BulletTag))
         {
             _anim.SetTrigger(AnimatorConstants._isHurtingProperty);
         }

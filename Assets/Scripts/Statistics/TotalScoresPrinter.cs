@@ -7,7 +7,7 @@ public class TotalScoresPrinter : MonoBehaviour
     [SerializeField] private TMP_Text _totalMonsterText;
     [SerializeField] private TMP_Text _total_livesText;
 
-    private void Update()
+    private void Start()
     {
         _totalCoinsText.text = Statistics.CoinsCollectedTotal.ToString();
         _totalMonsterText.text = Statistics.EnemiesKilledTotal.ToString();

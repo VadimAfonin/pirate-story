@@ -37,7 +37,7 @@ public class PlayerDetection : MonoBehaviour
     {
         if (_youVisible && !_enemyAnimatorController.IsEnemyKilled)
         {
-            AttackPlayer();
+            MoveToPlayer();
         }
     }
 
@@ -46,7 +46,7 @@ public class PlayerDetection : MonoBehaviour
         YouAttacked = (_playerTransform.position - transform.position).sqrMagnitude < _attackDistance;
     }
 
-    private void AttackPlayer()
+    private void MoveToPlayer()
     {
         transform.position = Vector2.MoveTowards(transform.position, _playerTransform.position, _enemySpeed * Time.deltaTime);
     }

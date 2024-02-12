@@ -15,11 +15,9 @@ GameObject:
   - component: {fileID: 6748527981418561223}
   - component: {fileID: 6748527981418561220}
   - component: {fileID: 6748527981418561217}
-  - component: {fileID: 6748527981418561216}
   - component: {fileID: 6748527981418561219}
   - component: {fileID: 6748527981418561218}
   - component: {fileID: 6748527981418561229}
-  - component: {fileID: 6748527981418561228}
   m_Layer: 6
   m_Name: Player
   m_TagString: Damageable
@@ -217,23 +215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerTransform: {fileID: 6748527981418561221}
-  _deathCanvas: {fileID: 168291777972042310, guid: 908f2f2f5d3218b4aa0dc42e287c0907, type: 3}
-  _GameCanvas: {fileID: 0}
   LastDirection: 0
---- !u!114 &6748527981418561216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6748527981418561272}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56aed08c16d8ee1419620e9ecc6f83c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _maxHealth: 100
-  IsAlive: 0
 --- !u!114 &6748527981418561219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,20 +270,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pauseCanvas: {fileID: 0}
-  _gameCanvas: {fileID: 0}
---- !u!114 &6748527981418561228
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6748527981418561272}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14c5f1b1b4a40dd438908827f549e718, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _youLooseScreen: {fileID: 0}
   _gameCanvas: {fileID: 0}
 --- !u!1 &6748527981536839273
 GameObject:

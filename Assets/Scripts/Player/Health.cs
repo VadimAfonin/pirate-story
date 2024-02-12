@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Health : MonoBehaviour
@@ -7,8 +8,6 @@ public class Health : MonoBehaviour
     private float _currentHealth;
 
     public bool IsAlive;
-
-    public float HealthPercent => Mathf.Clamp01(_currentHealth / _maxHealth);
 
     private void Awake()
     {

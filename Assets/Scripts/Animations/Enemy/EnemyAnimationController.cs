@@ -9,7 +9,7 @@ public class EnemyAnimationController : MonoBehaviour
 
     private Animator _anim;
     private Health _health;
-    private Health _playerHealth;
+    private PlayerHealth _playerHealth;
     private PlayerDetection _playerDetection;
 
     private float _currentCooldown = 0;
@@ -22,7 +22,7 @@ public class EnemyAnimationController : MonoBehaviour
         _anim = GetComponent<Animator>();
         _health = GetComponent<Health>();
         _playerDetection = GetComponent<PlayerDetection>();
-        _playerHealth = _player.GetComponent<Health>();
+        _playerHealth = _player.GetComponent<PlayerHealth>();
         _prevFrameXPosition = transform.position.x;
     }
 
@@ -46,6 +46,7 @@ public class EnemyAnimationController : MonoBehaviour
         //Death
         if (!_health.IsAlive)
         {
+            _health.IsAlive = true;
             _anim.SetBool(AnimatorConstants._isDeathProperty, true);
             StartCoroutine(WaitForEnemyDeathAnimation());
         }
@@ -64,14 +65,14 @@ public class EnemyAnimationController : MonoBehaviour
         }
 
         //Attack
-        if (_playerDetection.YouAttacked && _playerHealth.IsAlive && !IsEnemyKilled)
+        if (_playerDetection.YouAttacked && _playerHealth.PlayerIsAlive && !IsEnemyKilled)
         {
             _anim.SetBool(AnimatorConstants._isAttackedProperty, true);
             _player.GetComponent<Animator>().SetTrigger(AnimatorConstants._isHurtingProperty);
 
             if (_currentCooldown <= 0)
             {
-                _player.GetComponent<Health>().TakeDamage(_enemyDamage);
+                _player.GetComponent<PlayerHealth>().TakeDamage(_enemyDamage);
                 _currentCooldown = _attackCooldown;
             }
         }

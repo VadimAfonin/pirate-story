@@ -206,6 +206,18 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8992335005328469906, guid: fcd22fab0bae06445b91c69daaba2788, type: 3}
+      propertyPath: _maxHealth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8992335005328469906, guid: fcd22fab0bae06445b91c69daaba2788, type: 3}
+      propertyPath: _gameCanvas
+      value: 
+      objectReference: {fileID: 1277760114}
+    - target: {fileID: 8992335005328469906, guid: fcd22fab0bae06445b91c69daaba2788, type: 3}
+      propertyPath: _deathCanvas
+      value: 
+      objectReference: {fileID: 2068614446}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcd22fab0bae06445b91c69daaba2788, type: 3}
 --- !u!1 &17159138
@@ -11427,7 +11439,7 @@ PrefabInstance:
     - target: {fileID: 677161595, guid: 8e74a1c5a7964bf4cafa2fbda30a9d0d, type: 3}
       propertyPath: _player
       value: 
-      objectReference: {fileID: 1866796584}
+      objectReference: {fileID: 1866796592}
     - target: {fileID: 677161595, guid: 8e74a1c5a7964bf4cafa2fbda30a9d0d, type: 3}
       propertyPath: _deathCanvas
       value: 
@@ -15072,22 +15084,27 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6748527981418561272, guid: fcd22fab0bae06445b91c69daaba2788, type: 3}
   m_PrefabInstance: {fileID: 10539070}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1866796584 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6748527981418561216, guid: fcd22fab0bae06445b91c69daaba2788, type: 3}
-  m_PrefabInstance: {fileID: 10539070}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1866796579}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56aed08c16d8ee1419620e9ecc6f83c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1866796591 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6748527981418561221, guid: fcd22fab0bae06445b91c69daaba2788, type: 3}
   m_PrefabInstance: {fileID: 10539070}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1866796592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866796579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 809089d1bce980f4283fd88381f923f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _deathCanvas: {fileID: 2068614446}
+  _gameCanvas: {fileID: 1277760114}
+  PlayerIsAlive: 0
 --- !u!1 &1870166349
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,7 +7,7 @@ public class PlayerHealthBar : MonoBehaviour
     [SerializeField] private Image _playerHealthImage;
     [SerializeField] private GameObject _deathCanvas;
     [SerializeField] private GameObject _GameCanvas;
-    [SerializeField] private Health _player;
+    [SerializeField] private PlayerHealth _player;
 
     private bool _isCoroutineStarted = false;
 
@@ -15,7 +15,7 @@ public class PlayerHealthBar : MonoBehaviour
     {
         _playerHealthImage.fillAmount = _player.HealthPercent;
 
-        if (!_player.CheckIsAlive() && !_isCoroutineStarted)
+        if (!_player.PlayerIsAlive && !_isCoroutineStarted)
         {
             StartCoroutine(WaitForDeathCanvas());
             _isCoroutineStarted = true;

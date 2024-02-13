@@ -10,7 +10,7 @@ public class PlayerAnimationController : MonoBehaviour
     private Animator _anim;
     private PlayerInput _input;
 
-    public float LastDirection;
+    public float LastDirection = 0.2f;
 
     private void Awake()
     {
@@ -41,20 +41,6 @@ public class PlayerAnimationController : MonoBehaviour
             _anim.SetBool(AnimatorConstants._isJumpingProperty, false);
         }
 
-        //Shooting
-        if (Input.GetButtonDown(GlobalStringVars.Fire1))
-        {
-            _anim.SetTrigger(AnimatorConstants._isShootingProperty);
-        }
-
-        //Die
-        //if (!_health.IsAlive)
-        //{
-        //    _anim.SetBool(AnimatorConstants._isDeathProperty, true);
-        //    Debug.Log("---");
-        //    StartCoroutine(WaitForPlayerDeathAnimation());
-        //}
-
         //Sprite Direction
         if (_input.HorizontalDirection > 0)
         {
@@ -72,9 +58,4 @@ public class PlayerAnimationController : MonoBehaviour
     {
         _anim.SetBool(AnimatorConstants._isDeathProperty, true);
     }
-
-    public void GetDamageAnimation()
-    {
-        _anim.SetTrigger(AnimatorConstants._isHurtingProperty);
-    }    
 }

@@ -206,6 +206,18 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7054808479900017119, guid: fcd22fab0bae06445b91c69daaba2788, type: 3}
+      propertyPath: _allAmo
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 7054808479900017119, guid: fcd22fab0bae06445b91c69daaba2788, type: 3}
+      propertyPath: _currentAmmoText
+      value: 
+      objectReference: {fileID: 1384536623}
+    - target: {fileID: 7054808479900017119, guid: fcd22fab0bae06445b91c69daaba2788, type: 3}
+      propertyPath: _gunBulletCapacity
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8992335005328469906, guid: fcd22fab0bae06445b91c69daaba2788, type: 3}
       propertyPath: _maxHealth
       value: 100
@@ -11538,6 +11550,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e74a1c5a7964bf4cafa2fbda30a9d0d, type: 3}
+--- !u!114 &1384536623 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4373391496703739467, guid: 8e74a1c5a7964bf4cafa2fbda30a9d0d, type: 3}
+  m_PrefabInstance: {fileID: 1384536622}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1439896170 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1800170809393098643, guid: 34177a555d0aaaa499ec3e04af79d081, type: 3}

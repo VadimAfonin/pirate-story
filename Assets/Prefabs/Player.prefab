@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 6748527981418561219}
   - component: {fileID: 6748527981418561218}
   - component: {fileID: 6748527981418561229}
+  - component: {fileID: 7054808479900017119}
   m_Layer: 6
   m_Name: Player
   m_TagString: Damageable
@@ -271,6 +272,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _pauseCanvas: {fileID: 0}
   _gameCanvas: {fileID: 0}
+--- !u!114 &7054808479900017119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6748527981418561272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaf24279acd6c2c49b002c553531933b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bulletCount: 6
+  _bulletCountText: {fileID: 0}
+  _currentbulletCountText: {fileID: 0}
+  _pistolImage: {fileID: 0}
 --- !u!1 &6748527981536839273
 GameObject:
   m_ObjectHideFlags: 0

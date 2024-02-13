@@ -4294,6 +4294,17 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
+--- !u!114 &621686769 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4462983453715120242, guid: 8e74a1c5a7964bf4cafa2fbda30a9d0d, type: 3}
+  m_PrefabInstance: {fileID: 898451030}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &655373715
 GameObject:
   m_ObjectHideFlags: 0
@@ -5254,6 +5265,17 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
+--- !u!114 &742225131 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4373391496703739467, guid: 8e74a1c5a7964bf4cafa2fbda30a9d0d, type: 3}
+  m_PrefabInstance: {fileID: 898451030}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &766545290
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11848,6 +11870,30 @@ PrefabInstance:
     - target: {fileID: 6748527981418561272, guid: fcd22fab0bae06445b91c69daaba2788, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7054808479900017119, guid: fcd22fab0bae06445b91c69daaba2788, type: 3}
+      propertyPath: _allAmo
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 7054808479900017119, guid: fcd22fab0bae06445b91c69daaba2788, type: 3}
+      propertyPath: _pistolImage
+      value: 
+      objectReference: {fileID: 621686769}
+    - target: {fileID: 7054808479900017119, guid: fcd22fab0bae06445b91c69daaba2788, type: 3}
+      propertyPath: _bulletCountText
+      value: 
+      objectReference: {fileID: 742225131}
+    - target: {fileID: 7054808479900017119, guid: fcd22fab0bae06445b91c69daaba2788, type: 3}
+      propertyPath: _currentAmmoText
+      value: 
+      objectReference: {fileID: 742225131}
+    - target: {fileID: 7054808479900017119, guid: fcd22fab0bae06445b91c69daaba2788, type: 3}
+      propertyPath: _gunBulletCapacity
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7054808479900017119, guid: fcd22fab0bae06445b91c69daaba2788, type: 3}
+      propertyPath: _currentbulletCountText
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8992335005328469906, guid: fcd22fab0bae06445b91c69daaba2788, type: 3}
       propertyPath: _maxHealth

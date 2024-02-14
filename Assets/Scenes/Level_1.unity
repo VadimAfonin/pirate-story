@@ -3923,6 +3923,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5705052372110787319, guid: 2d9ccb72b1f7e1b4f99c99983d7ac53e, type: 3}
+      propertyPath: _gameCanvas
+      value: 
+      objectReference: {fileID: 282218261}
     - target: {fileID: 5928549366249725119, guid: 2d9ccb72b1f7e1b4f99c99983d7ac53e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnHomeButtonClick
@@ -5937,6 +5941,14 @@ PrefabInstance:
       propertyPath: _deathCanvas
       value: 
       objectReference: {fileID: 1938672653}
+    - target: {fileID: 1757488452199110410, guid: 8e74a1c5a7964bf4cafa2fbda30a9d0d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -279.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1757488452199110410, guid: 8e74a1c5a7964bf4cafa2fbda30a9d0d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 50.3
+      objectReference: {fileID: 0}
     - target: {fileID: 2056905198004578184, guid: 8e74a1c5a7964bf4cafa2fbda30a9d0d, type: 3}
       propertyPath: m_Name
       value: GameCanvas
@@ -6027,6 +6039,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2056905198004578188, guid: 8e74a1c5a7964bf4cafa2fbda30a9d0d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4099600382262294850, guid: 8e74a1c5a7964bf4cafa2fbda30a9d0d, type: 3}
+      propertyPath: m_Type
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4099600382262294850, guid: 8e74a1c5a7964bf4cafa2fbda30a9d0d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4099600382262294850, guid: 8e74a1c5a7964bf4cafa2fbda30a9d0d, type: 3}
+      propertyPath: m_FillAmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6135478896741893054, guid: 8e74a1c5a7964bf4cafa2fbda30a9d0d, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6135478896741893054, guid: 8e74a1c5a7964bf4cafa2fbda30a9d0d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -60
+      objectReference: {fileID: 0}
+    - target: {fileID: 6135478896741893054, guid: 8e74a1c5a7964bf4cafa2fbda30a9d0d, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -60
+      objectReference: {fileID: 0}
+    - target: {fileID: 6135478896741893054, guid: 8e74a1c5a7964bf4cafa2fbda30a9d0d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6135478896741893054, guid: 8e74a1c5a7964bf4cafa2fbda30a9d0d, type: 3}
+      propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -9084,6 +9128,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1687691039 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4099600382262294850, guid: 8e74a1c5a7964bf4cafa2fbda30a9d0d, type: 3}
+  m_PrefabInstance: {fileID: 1147347510}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1690866095
 GameObject:
   m_ObjectHideFlags: 0
@@ -11476,6 +11531,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6748527981418561221, guid: fcd22fab0bae06445b91c69daaba2788, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6748527981418561221, guid: fcd22fab0bae06445b91c69daaba2788, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.09
       objectReference: {fileID: 0}
@@ -11544,9 +11603,17 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7054808479900017119, guid: fcd22fab0bae06445b91c69daaba2788, type: 3}
+      propertyPath: _filledImage
+      value: 
+      objectReference: {fileID: 1687691039}
+    - target: {fileID: 7054808479900017119, guid: fcd22fab0bae06445b91c69daaba2788, type: 3}
       propertyPath: _currentAmmoText
       value: 
       objectReference: {fileID: 300484464}
+    - target: {fileID: 7054808479900017119, guid: fcd22fab0bae06445b91c69daaba2788, type: 3}
+      propertyPath: _animationCooldown
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 7054808479900017119, guid: fcd22fab0bae06445b91c69daaba2788, type: 3}
       propertyPath: _gunBulletCapacity
       value: 6

@@ -211,9 +211,17 @@ PrefabInstance:
       value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 7054808479900017119, guid: fcd22fab0bae06445b91c69daaba2788, type: 3}
+      propertyPath: _filledImage
+      value: 
+      objectReference: {fileID: 1384536624}
+    - target: {fileID: 7054808479900017119, guid: fcd22fab0bae06445b91c69daaba2788, type: 3}
       propertyPath: _currentAmmoText
       value: 
       objectReference: {fileID: 1384536623}
+    - target: {fileID: 7054808479900017119, guid: fcd22fab0bae06445b91c69daaba2788, type: 3}
+      propertyPath: _animationCooldown
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 7054808479900017119, guid: fcd22fab0bae06445b91c69daaba2788, type: 3}
       propertyPath: _gunBulletCapacity
       value: 6
@@ -11559,6 +11567,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1384536624 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4099600382262294850, guid: 8e74a1c5a7964bf4cafa2fbda30a9d0d, type: 3}
+  m_PrefabInstance: {fileID: 1384536622}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1439896170 stripped

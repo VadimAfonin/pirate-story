@@ -35,6 +35,7 @@ public class ButtonController : MonoBehaviour
         Time.timeScale = 1;
         Statistics.ResetStatsOnLevel();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        PauseController.IsPaused = false; ;
     }
 
     public void OnNextLevelButtonClick()

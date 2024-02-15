@@ -44,4 +44,9 @@ public class ButtonController : MonoBehaviour
         Time.timeScale = 1;
         Statistics.RefreshStats();
     }
+
+    public void OnExitButtonClick()
+    {
+        Application.Quit();
+    }
 }
